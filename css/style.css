@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 2rem;
+    border-bottom: solid 1px white;
+}
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.abrir-menu, .cerrar-menu {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#bgvid {
+    width: 100%;
+    }
+
+
+/* noticias */
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: red;
+    margin-left: 9%;
+    margin-top: 20px;
+}
+
+
+.noticias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 6% auto;
+    justify-content: center;
+}
+
+.noticias-imagenes {
+    width: 500px;
+    height: 320px;
+    margin: 40px;
+    border-radius: 1rem;
+    box-shadow: 11px 8px 26px -3px rgba(0,0,0,0.75);
+    transition: 1s;
+}
+
+.noticias-imagenes:hover {
+    transform: scale(1.1);
+}
+
+.noticias-parrafo {
+    margin-top: -60px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    max-width: 390px;
+
+}
+
+
+/* wallpaper */
+
+.wallpaper-fondo {
+    margin-top: 50px;
+    background: url("../img/fondo4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wallpaper-fondo h2 {
+    color: white;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.wallpaper {
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+}
+
+.wallpaper1 img{
+    margin: 50px 10px;
+    width: 300px;
+    height: 600px;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+.wallpaper2 img{
+    width: 1000px;
+    height: 600px;
+    border-radius: 1rem;
+    margin: 50px 10px;
+    transition: 1s;
+}
+
+.wallpaper1 img:hover,  .wallpaper2 img:hover {
+    transform: scale(1.1);
+}
+
+/* SLIDER */
+
+    .tituloSlider {
+        font-size: 1.5em;
+        font-weight: bold;
+        min-width: 400px;
+        color: white;
+        text-align: center;
+    }
+
+    .fade{
+    -webkit-animation-name:fade;
+    -webkit-animation-duration:1s;
+    animation-name:fade;
+    animation-duration:1s;
+    }
+
+    @-webkit-keyframes fade{
+    from{opacity:.4}
+    to{opacity:1}
+    }
+
+    @keyframes fade{
+    from{opacity:.4}
+    to{opacity:1}
+    }
+
+    /* footer */
+
+    footer {
+        background: black;
+        border-top: solid white;
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer div {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    footer div ul {
+        display: flex;
+    }
+
+    .logo-redes-footer{
+        width: 40px;
+        text-align: center;
+        justify-content: center;
+        margin: 30px;
+    }
+
+    footer h2 {
+        color: white;
+        width: 100%;
+    }
+
+    .copyright {
+        margin-top: 20px;
+    }
+
+
+    @media screen and (max-width: 1000px){
+        .noticias-imagenes {
+            width: 400px;
+            height: 290px;
+        }
+        .wallpaper-fondo {
+            height: 1000px;
+        }
+        
+        .wallpaper-fondo h2 {
+            color: white;
+            font-weight: bold;
+            padding-top: 30px;
+        }
+        .wallpaper1 img{
+            margin: 50px 2px;
+            width: 180px;
+            height: 400px;
+        }
+        .wallpaper2 img {
+            width: 100%;
+            height: 300px;
+            margin: 20px 0;
+        }
+        .mySlides {
+            margin: -40px;
+        }
+    }
+    @media screen and (max-width:680px) {
+        .abrir-menu, .cerrar-menu {
+            display: block;
+            border: 0;
+            font-size: 1.25rem;
+            cursor: pointer;
+        }
+        .abrir-menu {
+            color: white;
+            background-color: black;
+        }
+        .cerrar-menu {
+            color: white;
+            background-color: black;
+        }
+    
+        .nav {
+            opacity: 0;
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 1rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: black;
+            padding: 2rem;
+            box-shadow: 0 0 0 100vmax rgba(0,0,0,0.5);
+            
+        }
+        .nav.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        .nav-list {
+            flex-direction: column;
+            align-items: end;
+    
+        }
+    }
