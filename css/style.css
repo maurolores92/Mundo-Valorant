@@ -102,6 +102,11 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.wallpaper-fondo-pages {
+    background: url("../img/fondo4.jpg");
+    background-repeat: repeat;
+    background-size:cover;
+}
 
 .wallpaper-fondo h2 {
     color: white;
@@ -267,6 +272,7 @@ h2 {
         .nav-list {
             flex-direction: column;
             align-items: end;
+            cursor: pointer;
     
         }
         h2 {
