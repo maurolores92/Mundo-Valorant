@@ -257,6 +257,9 @@ h2 {
         color: rgb(255, 255, 255);
         min-width: 300px;
         max-width: 600px;
+        background: rgba(0,0,0,0.3);
+        margin: 20px 0;
+
     }
 
     .personaje-descripcion h3 {
@@ -290,6 +293,7 @@ h2 {
     .wallpaper-fondo-noticias {
         margin-top: -15px;
         background: url("../img/fondo7.jpg");
+        
         background-size: cover;
         width: 100%;
         height: 1000px;
