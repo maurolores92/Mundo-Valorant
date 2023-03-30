@@ -22,6 +22,7 @@ header {
     display: flex;
     gap: 1rem;
     font-weight: bold;
+    
 }
 
 .nav-list li a {
@@ -102,11 +103,7 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.wallpaper-fondo-pages {
-    background: url("../img/fondo4.jpg");
-    background-repeat: repeat;
-    background-size:cover;
-}
+
 
 .wallpaper-fondo h2 {
     color: white;
@@ -116,9 +113,9 @@ h2 {
 
 .wallpaper {
     display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .wallpaper1 img{
@@ -204,6 +201,99 @@ h2 {
         margin-top: 20px;
     }
 
+    /* hoja wallpaper */
+
+    .wallpaper-fondo-pages {
+        margin-top: -15px;
+        background: url("../img/fondo4.jpg");
+        background-size: contain;
+    }
+    
+    .wallpaper-pages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .wallpaper-pages img {
+        margin: 50px;
+        width: 300px;
+        height: 550px;
+        border-radius: 1rem;
+        border: solid 1px;
+        box-shadow: 11px 7px 20px -2px rgba(255,255,255,0.75);
+        transition: 1s;
+    }
+
+    .wallpaper-pages img:hover {
+        transform: scale(1.1);
+    }
+
+    /* hoja personajes  */
+
+    .wallpaper-fondo-personaje {
+        margin-top: -15px;
+        background: url("../img/fondo8.jpg");
+        background-size: contain;
+    }
+
+    .personajes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+    iframe {
+        margin: auto;
+        width: 600px;
+        height: 450px;
+        border-radius: 1rem;
+    }
+
+    .personaje-img {
+        margin: auto 0;
+    }
+    .personaje-descripcion {
+        color: rgb(255, 255, 255);
+        min-width: 300px;
+        max-width: 600px;
+    }
+
+    .personaje-descripcion h3 {
+        color: yellow;
+        font-size: 1.5em;
+    }
+
+    .personaje-descripcion h2 {
+        font-size: 3rem;
+    }    
+
+    .personaje-descripcion p {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 10px;
+        text-shadow: 4px 2px 0px rgba(0,0,0,0.33);
+    }
+
+    /* hoja armas */
+
+    .wallpaper-fondo-armas {
+        margin-top: -15px;
+        background: url("../img/fondo6.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 1000px;
+    }
+
+    /* hoja noticias */
+
+    .wallpaper-fondo-noticias {
+        margin-top: -15px;
+        background: url("../img/fondo7.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 1000px;
+    }
 
     @media screen and (max-width: 1000px){
         .noticias-imagenes {
@@ -219,6 +309,11 @@ h2 {
             margin: 50px 2px;
             width: 160px;
             height: 380px;
+        }
+        .wallpaper-pages img {
+            margin: 20px 2px;
+            width: 160px;
+            height: 300px;
         }
         .wallpaper2 img {
             width: 100%;
@@ -259,6 +354,8 @@ h2 {
             background-color: black;
             padding: 2rem;
             box-shadow: 0 0 0 100vmax rgba(0,0,0,0.5);
+            z-index:1; 
+            position: absolute;
             
         }
         .nav.visible {
@@ -284,5 +381,12 @@ h2 {
             width: 400px;
             height: 300px;
             margin: 20px 10px;
+        }
+
+        iframe {
+            margin: auto;
+            width: 400px;
+            height: 300px;
+            border-radius: 1rem;
         }
     }
